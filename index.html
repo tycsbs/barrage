@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>barrage</title>
+    <link rel="stylesheet" href="css/barrage.css">
+</head>
+<body>
+ <div id="container" class="container" style="width: 800px;height: 400px;margin: 100px auto;border:1px solid #ccc;"></div>
+</body>
+<script src="js/jquery-1.10.1.js"></script>
+<script src="js/barrage.js"></script>
+<script>
+    $(function(){
+        var con = $("body")
+        setInterval(function(){
+            con.barrage()
+        },1000)
+    })
+</script>
+</html>
